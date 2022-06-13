@@ -5,10 +5,10 @@ docker stopsek9-postgres
 yes | docker system prune
 
 docker run \
-  --namesek9-postgres \
+  --name sek9-postgres \
   --network=sek9 \
   --ip 172.20.0.4 \
-  --hostnamesek9_postgres \
+  --hostname sek9_postgres \
   --restart unless-stopped \
   -p 5432:5432 \
   -e POSTGRES_DB=sek9 \
