@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 
-docker stopsek9-postgres
+docker stop sek9-postgres
 
 yes | docker system prune
 
